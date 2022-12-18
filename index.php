@@ -8,10 +8,10 @@ require 'vendor/autoload.php';
 
 // Now instantiate the Auth0 class with our configuration:
 $auth0 = new \Auth0\SDK\Auth0([
-    'domain' => $_ENV['AUTH0_DOMAIN'],
-    'clientId' => $_ENV['AUTH0_CLIENT_ID'],
-    'clientSecret' => $_ENV['AUTH0_CLIENT_SECRET'],
-    'cookieSecret' => $_ENV['AUTH0_COOKIE_SECRET']
+    'domain' => 'batchy.au.auth0.com',
+    'clientId' => "p7I2w98tTDjdX70GZ9dQf6SPeupZOJHg",
+    'clientSecret' => "nGrEcIo7ixjgtHO0LlpSGlIGL-IE4C1ZFf872SowuFxe5PxbAgjkPr8u5HYD3aZl",
+    'cookieSecret' => "a1d8f9e56a38d3a5faa69540687f41dcd9edcb73de43b489970c3580e6404498"
 ]);
 
 // 👆 We're continuing from the steps above. Append this to your index.php file.
@@ -20,7 +20,7 @@ $auth0 = new \Auth0\SDK\Auth0([
 use Steampixel\Route;
 
 // Define route constants:
-define('ROUTE_URL_INDEX', rtrim($_ENV['AUTH0_BASE_URL'], '/'));
+define('ROUTE_URL_INDEX', rtrim("https://batchyy.shipitmate.app", '/'));
 define('ROUTE_URL_LOGIN', ROUTE_URL_INDEX . '/login');
 define('ROUTE_URL_CALLBACK', ROUTE_URL_INDEX . '/callback');
 define('ROUTE_URL_LOGOUT', ROUTE_URL_INDEX . '/logout');
