@@ -75,7 +75,7 @@ Route::add('/dashboard', function() use ($auth0) {
 
   $logged_in = true;
   // Have the SDK complete the authentication flow:
-  include_once 'dashboard.php';
+  include_once 'pages/dashboard.php';
 });
 
 Route::add('/billing', function() use ($auth0) {
