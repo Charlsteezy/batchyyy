@@ -5,6 +5,7 @@
         "http-interop/http-factory-guzzle": "^1.2",
         "auth0/auth0-php": "^8.3",
         "vlucas/phpdotenv": "^5.5",
-        "steampixel/simple-php-router": "^0.7.1"
+        "steampixel/simple-php-router": "^0.7.1",
+        "symfony/apache-pack": "^1.0"
     }
 }
