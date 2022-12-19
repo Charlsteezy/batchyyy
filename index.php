@@ -75,7 +75,7 @@ Route::add('/dashboard', function() use ($auth0) {
 
   $logged_in = true;
   // Have the SDK complete the authentication flow:
-  include_once '../pages/dashboard.php';
+  include_once 'pages/dashboard.php';
 });
 
 Route::add('/billing', function() use ($auth0) {
@@ -89,7 +89,7 @@ Route::add('/billing', function() use ($auth0) {
 
   $name = $session->user['name'];
   // Have the SDK complete the authentication flow:
-  include_once '../pages/billing.php';
+  include_once 'pages/billing.php';
 });
 
 // 👆 We're continuing from the steps above. Append this to your index.php file.
